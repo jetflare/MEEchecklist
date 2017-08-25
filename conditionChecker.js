@@ -39,6 +39,7 @@ function checkCondition2(){
 	if (pAlpha > pGamma){
 		string2="<span style='color:#00ff7f'>Condition II fulfilled!</span>"} else {
 		string2="Condition II <b>not</b> fulfilled!"}
+	string2 = "<span title='Pressure of evaporator feed inlet > pressure of evaporator feed bottom outlet'>" + string2 + "</span>"
 }
 
 function checkCondition3(){
@@ -47,6 +48,7 @@ function checkCondition3(){
 	if (pEpsilon > pDelta){
 		string3="<span style='color:#00ff7f'>Condition III fulfilled!</span>"} else {
 		string3="Condition III <b>not</b> fulfilled!"}
+	string3 = "<span title='Pressure of steam inlet > pressure of steam outlet'>" + string3 + "</span>"
 }
 
 function checkCondition4(){
@@ -57,6 +59,7 @@ function checkCondition4(){
 	if (tAlpha<tBeta&&tGamma<tEpsilon){
 		string4="<span style='color:#00ff7f'>Condition IV fulfilled!</span>"} else {
 		string4="Condition IV <b>not</b> fulfilled!"}
+	string4 = "<span title='Temperature of steam inlet > temperature of evaporator top/bottom outlet > temperature of evaporator feed inlet'>" + string4 + "</span>"
 }
 
 function checkCondition5(){
@@ -66,6 +69,7 @@ function checkCondition5(){
 	if (tAlpha<tDelta&&tDelta<tEpsilon){
 		string5="<span style='color:#00ff7f'>Condition V fulfilled!</span>"} else {
 		string5="Condition V <b>not</b> fulfilled!"}
+	string5 = "<span title='Temperature of steam inlet > temperature of steam outlet > temperature of evaporator feed inlet'>" + string5 + "</span>"
 }
 
 function checkCondition6(){
@@ -76,6 +80,7 @@ function checkCondition6(){
 		string6="<span style='color:#00ff7f'>Condition VI fulfilled!</span>"
 		} else {
 			string6="Condition VI <b>not</b> fulfilled!"}
+	string6 = "<span title='Pressure drop of evaporator feed < 0.5 bar'>" + string6 + "</span>"
 }
 
 function checkCondition7(){
@@ -85,6 +90,7 @@ function checkCondition7(){
 		string7="<span style='color:#00ff7f'>Condition VII fulfilled!</span>"
 		} else {
 			string7="Condition VII <b>not</b> fulfilled!"}
+	string7 = "<span title='Pressure drop of steam feed < 0.5 bar'>" + string7 + "</span>"
 }
 
 
