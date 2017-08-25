@@ -27,9 +27,9 @@ function checkCondition1(){
 	var pAlpha = eval(document.getElementById("Palpha").value)
 	var pBeta = eval(document.getElementById("Pbeta").value)
 	if (pAlpha > pBeta){
-		var string1="Condition I fulfilled!"
+		string1="Condition I fulfilled!"
 		} else {
-			var string1="Condition I <b>not</b> fulfilled!"}
+			string1="Condition I <b>not</b> fulfilled!"}
 }
 
 function checkCondition2(){
@@ -72,18 +72,18 @@ function checkCondition6(){
 	var pBeta = eval(document.getElementById("Pbeta").value)
 	var pGamma = eval(document.getElementById("Pgamma").value)
 	if (0.5>(pAlpha-pBeta)&&0.5>(pAlpha-pGamma)){
-		var string6="Condition VI fulfilled!"
+		string6="Condition VI fulfilled!"
 		} else {
-			var string6="Condition VI <b>not</b> fulfilled!"}
+			string6="Condition VI <b>not</b> fulfilled!"}
 }
 
 function checkCondition7(){
 	var pEpsilon = eval(document.getElementById("Pepsilon").value)
 	var pDelta = eval(document.getElementById("Pdelta").value)
 	if (0.5>(pEpsilon-pDelta)){
-		var string7="Condition VII fulfilled!"
+		string7="Condition VII fulfilled!"
 		} else {
-			var string7="Condition VII <b>not</b> fulfilled!"}
+			string7="Condition VII <b>not</b> fulfilled!"}
 }
 
 
