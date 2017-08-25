@@ -18,14 +18,19 @@ function checkCondition1(){
 	var pAlpha = eval(document.getElementById("Palpha").value)
 	var pBeta = eval(document.getElementById("Pbeta").value)
 	var truth1 = pAlpha > pBeta
-	if (pAlpha > pBeta){var string1="Condition I fulfilled!} else {var string1="Condition I NOT fulfilled!"}
+	if (pAlpha > pBeta){
+		var string1="Condition I fulfilled!
+		} else {
+			var string1="Condition I NOT fulfilled!"}
 }
 
 function checkCondition2(){
 	var pAlpha = eval(document.getElementById("Palpha").value)
 	var pGamma = eval(document.getElementById("Pgamma").value)
 	var truth1 = pAlpha > pGamma
-	if (pAlpha > pGamma){string1="Condition II fulfilled!} else {string1="Condition II <b>not</b> fulfilled!"}
+	if (pAlpha > pGamma){
+		string2="Condition II fulfilled!} else {
+		string2="Condition II <b>not</b> fulfilled!"}
 }
 
 
