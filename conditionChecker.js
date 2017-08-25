@@ -18,7 +18,7 @@ function checkCondition1(){
 	var pAlpha = eval(document.getElementById("Palpha").value)
 	var pBeta = eval(document.getElementById("Pbeta").value)
 	var truth1 = pAlpha > pBeta
-	if (pAlpha > pBeta){var string1="Condition I fulfilled!} else {var string1="Condition I <b>not</b> fulfilled!"}
+	if (pAlpha > pBeta){var string1="Condition I fulfilled!} else {var string1="Condition I NOT fulfilled!"}
 }
 
 function checkCondition2(){
