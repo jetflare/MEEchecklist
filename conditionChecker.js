@@ -14,6 +14,13 @@ function evaluateConditions() {
 	checkCondition5()
 	checkCondition6()
 	checkCondition7()
+	document.getElementById('results').innerHTML = string1 + "<br>"
+	document.getElementById('results').innerHTML += string2 + "<br>"
+	document.getElementById('results').innerHTML += string3 + "<br>"
+	document.getElementById('results').innerHTML += string4 + "<br>"
+	document.getElementById('results').innerHTML += string5 + "<br>"
+	document.getElementById('results').innerHTML += string6 + "<br>"
+	document.getElementById('results').innerHTML += string7 + "<br>"
 }
 
 function checkCondition1(){
