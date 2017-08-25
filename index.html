@@ -6,6 +6,15 @@
 	<body>
 	<script>
 	</script>
+  
+	<p class="conditions"><br>Conditions to fulfill:<br>
+	Condition I: Pressure of evaporator feed inlet &#62; pressure of evaporator feed top outlet<br>
+	Condition II: Pressure of evaporator feed inlet &#62; pressure of evaporator feed bottom outlet<br>
+	Condition III: Pressure of steam inlet &#62; pressure of steam outlet<br>
+	Condition IV: Temperature of steam inlet &#62; temperature of evaporator top/bottom outlet &#62; temperature of evaporator feed inlet<br>
+	Condition V: Temperature of steam inlet &#62; temperature of steam outlet &#62; temperature of evaporator feed inlet<br>
+	Condition VI: Pressure drop of evaporator feed &#60; 0.5 bar<br>
+		Condition VI: Pressure drop of steam feed &#60; 0.5 bar<br></p>
 	
 		<p class="evaporator"><br>Evaporator Feed Inlet<br>
 	Temperature: <input type="text" id="Talpha" value=""> °C<br>
@@ -26,18 +35,9 @@
 	<br>Steam Outlet<br>
 	Temperature: <input type="text" id="Tdelta" value=""> °C<br>
 		Pressure: <input type="text" id="Pdelta" value=""> bar<br></p>
-  
-	<br>Conditions to fulfill:<br>
-	Condition I: Pressure of evaporator feed inlet &#62; pressure of evaporator feed top outlet<br>
-	Condition II: Pressure of evaporator feed inlet &#62; pressure of evaporator feed bottom outlet<br>
-	Condition III: Pressure of steam inlet &#62; pressure of steam outlet<br>
-	Condition IV: Temperature of steam inlet &#62; temperature of evaporator top/bottom outlet &#62; temperature of evaporator feed inlet<br>
-	Condition V: Temperature of steam inlet &#62; temperature of steam outlet &#62; temperature of evaporator feed inlet<br>
-	Condition VI: Pressure drop of evaporator feed &#60; 0.5 bar<br>
-	Condition VI: Pressure drop of steam feed &#60; 0.5 bar<br>
 	
 	<br><input type=button value="Evaluate" onClick="evaluateConditions()"><br>
-	<br><span id="results">(click "Evaluate")</span>
+		<p class="conditions"><br><span id="results">(click "Evaluate")</span></p>
 	
 	</body>
 </html>
