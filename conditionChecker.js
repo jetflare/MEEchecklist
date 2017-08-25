@@ -29,7 +29,7 @@ function checkCondition2(){
 	var pGamma = eval(document.getElementById("Pgamma").value)
 	var truth1 = pAlpha > pGamma
 	if (pAlpha > pGamma){
-		string2="Condition II fulfilled!} else {
+		string2="Condition II fulfilled!"} else {
 		string2="Condition II <b>not</b> fulfilled!"}
 }
 
