@@ -30,6 +30,7 @@ function checkCondition1(){
 		string1="<span style='color:#00ff7f'>Condition I fulfilled!</span>"
 		} else {
 			string1="Condition I <b>not</b> fulfilled!"}
+	string1= "<span title='Pressure of evaporator feed inlet > pressure of evaporator feed top outlet'>" + string1 + "</span>"
 }
 
 function checkCondition2(){
