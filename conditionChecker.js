@@ -33,4 +33,12 @@ function checkCondition2(){
 		string2="Condition II <b>not</b> fulfilled!"}
 }
 
+function checkCondition3(){
+	var pEpsilon = eval(document.getElementById("Pepsilon").value)
+	var pDelta = eval(document.getElementById("Pdelta").value)
+	if (pEpsilon > pDelta){
+		string3="Condition III fulfilled!"} else {
+		string3="Condition III <b>not</b> fulfilled!"}
+}
+
 
