@@ -4,6 +4,7 @@ var string3
 var string4
 var string5
 var string6
+var string7
 
 function evaluateConditions() {
 	checkCondition1()
@@ -12,12 +13,12 @@ function evaluateConditions() {
 	checkCondition4()
 	checkCondition5()
 	checkCondition6()
+	checkCondition7()
 }
 
 function checkCondition1(){
 	var pAlpha = eval(document.getElementById("Palpha").value)
 	var pBeta = eval(document.getElementById("Pbeta").value)
-	var truth1 = pAlpha > pBeta
 	if (pAlpha > pBeta){
 		var string1="Condition I fulfilled!"
 		} else {
@@ -27,7 +28,6 @@ function checkCondition1(){
 function checkCondition2(){
 	var pAlpha = eval(document.getElementById("Palpha").value)
 	var pGamma = eval(document.getElementById("Pgamma").value)
-	var truth1 = pAlpha > pGamma
 	if (pAlpha > pGamma){
 		string2="Condition II fulfilled!"} else {
 		string2="Condition II <b>not</b> fulfilled!"}
@@ -39,6 +39,43 @@ function checkCondition3(){
 	if (pEpsilon > pDelta){
 		string3="Condition III fulfilled!"} else {
 		string3="Condition III <b>not</b> fulfilled!"}
+}
+
+function checkCondition4(){
+	var tEpsilon = eval(document.getElementById("Tepsilon").value)
+	var tAlpha = eval(document.getElementById("Talpha").value)
+	var tGamma = eval(document.getElementById("Tgamma").value)
+	if (tAlpha<tBeta&&tGamma<tEpsilon){
+		string4="Condition IV fulfilled!"} else {
+		string4="Condition IV <b>not</b> fulfilled!"}
+}
+
+function checkCondition5(){
+	var tEpsilon = eval(document.getElementById("Tepsilon").value)
+	var tAlpha = eval(document.getElementById("Talpha").value)
+	var tDelta = eval(document.getElementById("Tdelta").value)
+	if (tAlpha<tDelta&&tDelta<tEpsilon){
+		string5="Condition V fulfilled!"} else {
+		string5="Condition V <b>not</b> fulfilled!"}
+}
+
+function checkCondition6(){
+	var pAlpha = eval(document.getElementById("Palpha").value)
+	var pBeta = eval(document.getElementById("Pbeta").value)
+	var pGamma = eval(document.getElementById("Pgamma").value)
+	if (0.5>(pAlpha-pBeta)&&0.5>(pAlpha-pGamma)){
+		var string6="Condition VI fulfilled!"
+		} else {
+			var string6="Condition VI <b>not</b> fulfilled!"}
+}
+
+function checkCondition7(){
+	var pEpsilon = eval(document.getElementById("Pepsilon").value)
+	var pDelta = eval(document.getElementById("Pdelta").value)
+	if (0.5>(pEpsilon-pDelta)){
+		var string7="Condition VII fulfilled!"
+		} else {
+			var string7="Condition VII <b>not</b> fulfilled!"}
 }
 
 
