@@ -27,9 +27,7 @@ function checkCondition1(){
 	var pAlpha = eval(document.getElementById("Palpha").value)
 	var pBeta = eval(document.getElementById("Pbeta").value)
 	if (pAlpha > pBeta){
-		string1="<span style='color:#00ff7f'
-		title='Pressure of evaporator feed inlet > pressure of evaporator feed top outlet'>
-			Condition I fulfilled!</span>"
+		string1="<span style='color:#00ff7f'>Condition I fulfilled!</span>"
 		} else {
 			string1="Condition I <b>not</b> fulfilled!"}
 }
