@@ -30,7 +30,7 @@ function checkCondition1(){
 		string1="<span style='color:#00ff7f'>Condition I OK!</span>"
 		} else {
 			string1="Condition I <b>not</b> OK..."}
-	string1= "<span title='Pressure of evaporator feed inlet > pressure of evaporator feed top outlet'>" + string1 + "</span>"
+	string1= "<span title='I: Pressure of evaporator feed inlet > pressure of evaporator feed top outlet'>" + string1 + "</span>"
 }
 
 function checkCondition2(){
@@ -39,7 +39,7 @@ function checkCondition2(){
 	if (pAlpha > pGamma){
 		string2="<span style='color:#00ff7f'>Condition II OK!</span>"} else {
 		string2="Condition II <b>not</b> OK..."}
-	string2 = "<span title='Pressure of evaporator feed inlet > pressure of evaporator feed bottom outlet'>" + string2 + "</span>"
+	string2 = "<span title='II: Pressure of evaporator feed inlet > pressure of evaporator feed bottom outlet'>" + string2 + "</span>"
 }
 
 function checkCondition3(){
@@ -48,7 +48,7 @@ function checkCondition3(){
 	if (pEpsilon > pDelta){
 		string3="<span style='color:#00ff7f'>Condition III OK!</span>"} else {
 		string3="Condition III <b>not</b> OK..."}
-	string3 = "<span title='Pressure of steam inlet > pressure of steam outlet'>" + string3 + "</span>"
+	string3 = "<span title='III: Pressure of steam inlet > pressure of steam outlet'>" + string3 + "</span>"
 }
 
 function checkCondition4(){
@@ -59,7 +59,7 @@ function checkCondition4(){
 	if (tAlpha<tBeta&&tGamma<tEpsilon){
 		string4="<span style='color:#00ff7f'>Condition IV OK!</span>"} else {
 		string4="Condition IV <b>not</b> OK..."}
-	string4 = "<span title='Temperature of steam inlet > temperature of evaporator top/bottom outlet > temperature of evaporator feed inlet'>" + string4 + "</span>"
+	string4 = "<span title='IV: Temperature of steam inlet > temperature of evaporator top/bottom outlet > temperature of evaporator feed inlet'>" + string4 + "</span>"
 }
 
 function checkCondition5(){
@@ -69,7 +69,7 @@ function checkCondition5(){
 	if (tAlpha<tDelta&&tDelta<tEpsilon){
 		string5="<span style='color:#00ff7f'>Condition V OK!</span>"} else {
 		string5="Condition V <b>not</b> OK..."}
-	string5 = "<span title='Temperature of steam inlet > temperature of steam outlet > temperature of evaporator feed inlet'>" + string5 + "</span>"
+	string5 = "<span title='V: Temperature of steam inlet > temperature of steam outlet > temperature of evaporator feed inlet'>" + string5 + "</span>"
 }
 
 function checkCondition6(){
@@ -80,7 +80,7 @@ function checkCondition6(){
 		string6="<span style='color:#00ff7f'>Condition VI OK!</span>"
 		} else {
 			string6="Condition VI <b>not</b> OK..."}
-	string6 = "<span title='Pressure drop of evaporator feed < 0.5 bar'>" + string6 + "</span>"
+	string6 = "<span title='VI: Pressure drop of evaporator feed < 0.5 bar'>" + string6 + "</span>"
 }
 
 function checkCondition7(){
@@ -90,7 +90,7 @@ function checkCondition7(){
 		string7="<span style='color:#00ff7f'>Condition VII OK!</span>"
 		} else {
 			string7="Condition VII <b>not</b> OK..."}
-	string7 = "<span title='Pressure drop of steam feed < 0.5 bar'>" + string7 + "</span>"
+	string7 = "<span title='VII: Pressure drop of steam feed < 0.5 bar'>" + string7 + "</span>"
 }
 
 
