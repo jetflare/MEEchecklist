@@ -52,6 +52,7 @@ function checkCondition4(){
 	var tEpsilon = eval(document.getElementById("Tepsilon").value)
 	var tAlpha = eval(document.getElementById("Talpha").value)
 	var tGamma = eval(document.getElementById("Tgamma").value)
+	var tBeta = eval(document.getElementById("Tbeta").value)
 	if (tAlpha<tBeta&&tGamma<tEpsilon){
 		string4="Condition IV fulfilled!"} else {
 		string4="Condition IV <b>not</b> fulfilled!"}
