@@ -6,6 +6,22 @@ var string5
 var string6
 var string7
 
+var massH2O
+var massMEG
+var massDEG
+var massTEG
+
+var line1
+var line2
+var line3
+var line4
+var lineEnd
+
+var MWH2O = 18.01528
+var MWMEG = 62.07
+var MWDEG = 106.12
+var MWTEG = 150.17
+
 function evaluateConditions() {
 	checkCondition1()
 	checkCondition2()
@@ -21,6 +37,51 @@ function evaluateConditions() {
 	document.getElementById('results').innerHTML += string5 + "<br>"
 	document.getElementById('results').innerHTML += string6 + "<br>"
 	document.getElementById('results').innerHTML += string7 + "<br>"
+}
+
+function calculateMassFraction() {
+	calculateMassH2O()
+	calculateMassMEG()
+	calculateMassDEG()
+	calculateMassTEG()
+	calculateMassFrac()
+	document.getElementById('results2').innerHTML = line1 + "<br>"
+	document.getElementById('results2').innerHTML += line2 + "<br>"
+	document.getElementById('results2').innerHTML += line3 + "<br>"
+	document.getElementById('results2').innerHTML += line4 + "<br>"
+	document.getElementById('results2').innerHTML += lineEnd + "<br>"
+}
+
+function calculateMassH2O(){
+	var molesH2O = eval(document.getElementById("moleH2O").value)
+	massH2O = molesH2O * MWH2O
+	line1 = "Mass of water: " + massH2O + "kg"
+}
+
+function calculateMassMEG(){
+	var molesMEG = eval(document.getElementById("moleMEG").value)
+	massMEG = molesMEG * MWMEG
+	line2 = "Mass of MEG: " + massMEG + "kg"
+}
+
+function calculateMassDEG(){
+	var molesDEG = eval(document.getElementById("moleDEG").value)
+	massDEG = molesDEG * MWDEG
+	line3 = "Mass of DEG: " + massDEG + "kg"
+}
+
+function calculateMassTEG(){
+	var molesTEG = eval(document.getElementById("moleTEG").value)
+	massTEG = molesTEG * MWTEG
+	line4 = "Mass of TEG: " + massTEG + "kg"
+}
+
+function calculateMassFrac(){
+	var sumMass= massH2O + massMEG + massDEG + massTEG
+	line1 += " (" + massH2O/sumMass + ")"
+	line2 += " (" + massMEG/sumMass + ")"
+	line3 += " (" + massDEG/sumMass + ")"
+	line4 += " (" + massTEG/sumMass + ")"
 }
 
 function checkCondition1(){
