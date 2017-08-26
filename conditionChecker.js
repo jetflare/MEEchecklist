@@ -55,33 +55,33 @@ function calculateMassFraction() {
 function calculateMassH2O(){
 	var molesH2O = eval(document.getElementById("moleH2O").value)
 	massH2O = molesH2O * MWH2O
-	line1 = "Mass of water: " + massH2O.toPrecision(7) + "kg"
+	line1 = "Mass of water: " + massH2O.toPrecision(7) + " kg"
 }
 
 function calculateMassMEG(){
 	var molesMEG = eval(document.getElementById("moleMEG").value)
 	massMEG = molesMEG * MWMEG
-	line2 = "Mass of MEG: " + massMEG.toPrecision(7) + "kg"
+	line2 = "Mass of MEG: " + massMEG.toPrecision(7) + " kg"
 }
 
 function calculateMassDEG(){
 	var molesDEG = eval(document.getElementById("moleDEG").value)
 	massDEG = molesDEG * MWDEG
-	line3 = "Mass of DEG: " + massDEG.toPrecision(7) + "kg"
+	line3 = "Mass of DEG: " + massDEG.toPrecision(7) + " kg"
 }
 
 function calculateMassTEG(){
 	var molesTEG = eval(document.getElementById("moleTEG").value)
 	massTEG = molesTEG * MWTEG
-	line4 = "Mass of TEG: " + massTEG.toPrecision(7) + "kg"
+	line4 = "Mass of TEG: " + massTEG.toPrecision(7) + " kg"
 }
 
 function calculateMassFrac(){
 	var sumMass= massH2O + massMEG + massDEG + massTEG
-	line1 += " (" + (massH2O/sumMass).toPrecision(4) + ")"
-	line2 += " (" + (massMEG/sumMass).toPrecision(4) + ")"
-	line3 += " (" + (massDEG/sumMass).toPrecision(4) + ")"
-	line4 += " (" + (massTEG/sumMass).toPrecision(4) + ")"
+	line1 += " (" + (massH2O/sumMass*100).toPrecision(4) + "%)"
+	line2 += " (" + (massMEG/sumMass*100).toPrecision(4) + "%)"
+	line3 += " (" + (massDEG/sumMass*100).toPrecision(4) + "%)"
+	line4 += " (" + (massTEG/sumMass*100).toPrecision(4) + "%)"
 }
 
 function checkCondition1(){
