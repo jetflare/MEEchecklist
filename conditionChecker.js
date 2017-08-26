@@ -76,6 +76,8 @@ function calculateMassTEG(){
 	line4 = "Mass of TEG: " + massTEG.toPrecision(7) + " kg"
 }
 
+//
+
 function calculateMassFrac(){
 	var sumMass= massH2O + massMEG + massDEG + massTEG
 	line1 += " (" + (massH2O/sumMass*100).toPrecision(4) + "%)"
